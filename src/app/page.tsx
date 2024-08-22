@@ -1,6 +1,5 @@
-import ECommerce from "@/components/Dashboard/E-commerce";
+import SignIn from "@/app/auth/signin/page";
 import { Metadata } from "next";
-import DefaultLayout from "@/components/Layouts/DefaultLayout";
 
 export const metadata: Metadata = {
   title:
@@ -8,12 +7,12 @@ export const metadata: Metadata = {
   description: "This is Next.js Home for TailAdmin Dashboard Template",
 };
 
+const isSignedIn = false;
+
 export default function Home() {
   return (
     <>
-      <DefaultLayout>
-        <ECommerce />
-      </DefaultLayout>
+      <SignIn />
     </>
   );
 }
