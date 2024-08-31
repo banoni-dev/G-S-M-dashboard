@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -91,15 +90,6 @@ const SignIn: React.FC = () => {
                     value="Sign In"
                     className="w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
                   />
-                </div>
-
-                <div className="mt-6 text-center">
-                  <p>
-                    Don’t have any account?{" "}
-                    <Link href="/auth/signup" className="text-primary">
-                      Sign Up
-                    </Link>
-                  </p>
                 </div>
               </form>
             </div>
